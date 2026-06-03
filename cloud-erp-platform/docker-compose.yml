@@ -79,16 +79,13 @@ services:
 
   # ── Nginx API Gateway (Public Subnet — bridges both networks) ────────────
   gateway:
-    image: nginx:alpine
+    build: ./gateway
     container_name: api-gateway
     ports:
       - "80:80"                  # ← ONLY this port is exposed to the internet
     networks:
       - public_subnet            # internet-facing
       - private_subnet           # can reach private services
-    volumes:
-      - ./gateway/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./dashboard:/usr/share/nginx/html:ro
     depends_on:
       erp:
         condition: service_healthy

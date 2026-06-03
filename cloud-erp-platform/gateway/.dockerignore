@@ -1,0 +1,16 @@
+# Ignore unnecessary files to optimize build context
+.git
+.gitignore
+.github
+.vscode
+.env*
+*.md
+*.log
+*.pid
+__pycache__
+*.pyc
+.pytest_cache
+.coverage
+services/
+terraform/
+tests/
