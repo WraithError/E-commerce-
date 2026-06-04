@@ -1,2 +1,3 @@
 # Networking-in-cloudes-Assignment-s-code
-!!! NOT FRO REAL PROJECTS !!!
+!!! THIS REPO ONLY FOR TESTING !!!
+!!! NOT A REAL WORKING WEBSITE !!!
