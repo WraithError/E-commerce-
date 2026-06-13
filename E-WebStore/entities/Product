@@ -1,0 +1,77 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "price": {
+      "type": "number",
+      "description": "Selling price"
+    },
+    "cost_price": {
+      "type": "number",
+      "description": "Cost price"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Electronics",
+        "Clothing",
+        "Books",
+        "Home & Garden",
+        "Sports",
+        "Beauty",
+        "Food",
+        "Toys",
+        "Other"
+      ],
+      "default": "Other"
+    },
+    "stock_quantity": {
+      "type": "number",
+      "default": 0
+    },
+    "reorder_level": {
+      "type": "number",
+      "default": 5
+    },
+    "sku": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "rating": {
+      "type": "number",
+      "default": 0
+    },
+    "review_count": {
+      "type": "number",
+      "default": 0
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "price"
+  ]
+}
